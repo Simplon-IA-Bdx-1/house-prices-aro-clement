@@ -47,7 +47,7 @@ Training model used was XGBoostRegressor with default hyper-parameters.
 ## Data Exploration (section #1, #2 and #3)
 
 ### Vizualization of all data (#1)
-Data visualization using `pandas_profiling`, `pandas hist`, `matplotlib`,  `seaborn` librairies.
+Data visualization using `pandas_profiling`, `dataframe.hist`, `matplotlib`,  `seaborn` librairies.
 
 ### Transformation of data (#2)
 - Detection of outliers 

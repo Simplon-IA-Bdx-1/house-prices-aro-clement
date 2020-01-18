@@ -1,0 +1,27 @@
+version: "3"
+services:
+  houseprices:
+    build:
+      context: ../
+      dockerfile: ./docker/Dockerfile
+      #args:
+      #  - username=devel
+      # - userid=1000
+    container_name: houseprices
+    image: handson-ml2
+    restart: unless-stopped
+    logging:
+      driver: json-file
+      options:
+        max-size: 50m
+    ports:
+      - "8888:8888"
+      - "6006:6006"
+    volumes:
+      - ../:/home/devel/houseprices
+    command: /opt/conda/bin/jupyter notebook --ip='0.0.0.0' --port=8888  --no-browser
+    environment: 
+      - BIGML_USERNAME=ARORAZA
+      - BIGML_API_KEY=d33d21b0264f25d04695ff816607167ae4fd6be7
+      - KAGGLE_USERNAME=aroraza
+      - KAGGLE_KEY=55dd23f15ff529bb696ecf1c0b7c5aed

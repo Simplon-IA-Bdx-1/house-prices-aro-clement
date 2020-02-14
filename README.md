@@ -14,14 +14,15 @@ Features are composed by both numerical and categorial variables.
 ## Prerequisites
 
 - Anaconda :  
-Set a `HousePrices` envrironment for Anaconda. Run :
+Set a `HousePrices` envrironment for Anaconda, then run :
 ```
 $ conda env create -f requirements.yml && conda activate HousePrices && jupyter notebook
  ```     
 
-- Docker
+- Docker:  
 Switch to `docker` directory here.
-Create and Fill an `auth.env` file (same configuraiton as `auth-sample.env`) the  and run : 
+Create and Fill an `auth.env` file (same configuraiton as `auth-sample.env`), then 
+run : 
 ```
 $ docker-compose up
  ```     
